@@ -17,15 +17,21 @@ int sum(int x[],int y)
 {
     int z=0;
     int cont=0;
-    while (cont<y)
+    while (cont<=y)
     {
         z+=x[cont];
         cont++;
     }
-    cout<<z;
+    return z;
 }
 
-
+int suma(int x[], int cont){
+	if (cont==1){
+		return x[0];
+	}
+	else
+		return x[cont-1]+sum(x,cont-1);
+}
 
 int main()
 {
@@ -33,7 +39,6 @@ int main()
     int leng=0;
     leng=len(a);
     cout<<"el tamaño de la lista es de:"<<leng<<"\n\n";
-    sum(a,leng);
+    cout<<suma(a,leng);
 }
-
 
