@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-int len(char x[])
+int tam(char x[])
 {
     int cont=0;
     for (int y=0;x[y]!='\0';y++)
@@ -17,7 +17,7 @@ int main()
 {
     char a[]={'a','b','c','d','e','f'};
     int leng=0;
-    leng=strlen(a);
+    leng=tam(a);
     cout<<"el tamaño de la lista es de: "<<leng;
 
 }
