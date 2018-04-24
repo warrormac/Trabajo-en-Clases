@@ -15,7 +15,7 @@ int tam(char x[])
 
 int main()
 {
-    char a[]={'a','b','c','d','f','m'};
+    char a[]={'a','b','c','d','f','m','\0'};
     int leng=0;
     leng=tam(a);
     cout<<"el tamaño de la lista es de: "<<leng;
