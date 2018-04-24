@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-int len(int x[])
+int tam(char x[])
 {
     int cont=0;
     for (int y=0;x[y]!='\0';y++)
@@ -12,8 +12,7 @@ int len(int x[])
     return cont;
 }
 
-
-int itrcambio(int x[],  int p)
+void itrcambio(char x[],  int p)
 {
     int r,q,m;
     int n;
@@ -53,12 +52,14 @@ int itrcambio(int x[],  int p)
 
 int main()
 {
-    int a[]={1,2,3,4,5,6,7,8};
+    char a[]={'h','o','l','a','\0'};
     int leng=0;
-    leng=len(a);
-    cout<<"el tamaño de la lista es de:"<<leng<<"\n\n";
+    leng=tam(a);
+    cout<<"el tamaÃ±o de la lista es de:"<<leng<<"\n\n";
     itrcambio(a,leng);
 }
+
+
 
 
 
